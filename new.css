@@ -1,0 +1,39 @@
+.theme-toggle {
+  position: fixed; top: 16px; right: 16px; z-index: 800;
+  display: flex; align-items: center; gap: 9px;
+  padding: 7px 14px; background: var(--card); border: 1px solid var(--border);
+  border-radius: 100px; box-shadow: var(--shadow-sm); cursor: pointer;
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--text2); transition: box-shadow 0.3s; user-select: none;
+}
+.theme-toggle:hover { box-shadow: var(--shadow-md); }
+.toggle-track {
+  width: 30px; height: 17px; border-radius: 100px;
+  background: var(--border); position: relative; transition: background 0.3s;
+}
+[data-theme=\"dark\"] .toggle-track { background: var(--gold); }
+.toggle-thumb {
+  position: absolute; top: 2px; left: 2px; width: 13px; height: 13px;
+  border-radius: 50%; background: #fff;
+  transition: transform 0.3s var(--ease); box-shadow: 0 1px 4px rgba(0,0,0,.2);
+}
+[data-theme=\"dark\"] .toggle-thumb { transform: translateX(13px); }'''
+
+new_css = '''/* ── THEME TOGGLE ICON BUTTON (in nav) ── */
+.theme-icon-btn {
+  background: none; border: none; cursor: pointer;
+  font-size: 18px; line-height: 1;
+  padding: 4px 6px; border-radius: 6px;
+  margin-left: 8px;
+  transition: transform 0.2s, opacity 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.theme-icon-btn:hover { transform: rotate(20deg); opacity: 0.75; }'''
+
+if old_css in content:
+    content = content.replace(old_css, new_css)
+    open('style.css','w').write(content)
+    print('CSS replaced OK')
+else:
+    print('NOT FOUND in css')
+"

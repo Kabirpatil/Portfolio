@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Kabir Patil — Data Science Engineer</title>
+  <meta name="description" content="Kabir Patil — Data Science Engineer specialising in ML, SQL, IoT, and Power BI. Based in Nagpur, India."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="pl-img"><img src="assets/kabir.jpg" alt="Kabir Patil"/></div>
+    <div class="pl-name">Kabir Patil</div>
+    <div class="pl-track"><div class="pl-fill"></div></div>
+    <div class="pl-sub">Data Science Engineer</div>
+  </div>
+
+  <!-- CURSORS -->
+  <div id="cur"></div>
+  <div id="cur-r"></div>
+
+  <!-- THEME TOGGLE -->
+  <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+    <span id="toggleIcon">☀️</span>
+  </button>
+
+  <!-- ══ NAV ══ -->
+  <nav id="nav">
+    <a href="#" class="logo">Kabir Patil</a>
+    <div class="nav-links">
+      <a href="#skills" class="nl">Skills</a>
+      <a href="#experience" class="nl">Experience</a>
+      <a href="#projects" class="nl">Projects</a>
+      <a href="#education" class="nl">Education</a>
+      <a href="#contact" class="nl-cta">Hire Me</a>
+    </div>
+    <button class="nav-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#education" onclick="closeMobileMenu()">Education</a>
+    <a href="#contact" onclick="closeMobileMenu()">Hire Me</a>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <!-- LEFT: Text -->
+    <div class="hero-left">
+      <div class="h-kicker">
+        <span class="kicker-dot"></span>
+        Data Science Engineer
+        <span class="kicker-ln"></span>
+        2026
+      </div>
+      <h1 class="h-name">Kabir<br><em>Patil.</em></h1>
+      <div class="h-role">Nagpur, Maharashtra · B.Tech CSE</div>
+      <div class="h-typed-row">
+        <span id="typed-text"></span><span class="h-tcur"></span>
+      </div>
+      <p class="h-desc">
+        Transforming raw data into decisions that scale. Specialised in ML pipelines,
+        SQL analytics, IoT systems, and business intelligence dashboards that drive real outcomes.
+      </p>
+      <div class="h-btns">
+        <a href="mailto:kabirpatil0302@gmail.com" class="btn-solid">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Get In Touch
+        </a>
+        <a href="https://github.com/Kabirpatil/" target="_blank" rel="noopener" class="btn-outline">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/kabir-patil-41b889234/" target="_blank" rel="noopener" class="btn-outline">LinkedIn ↗</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Photo -->
+    <div class="hero-right">
+      <div class="photo-frame-outer">
+        <div class="float-chip chip-1"><span class="chip-dot"></span>Python · ML</div>
+        <div class="float-chip chip-2"><span class="chip-dot"></span>SQL</div>
+        <div class="float-chip chip-3"><span class="chip-dot"></span>Data Science</div>
+        <div class="float-chip chip-4"><span class="chip-dot"></span>IoT</div>
+        <div class="float-chip chip-5"><span class="chip-dot"></span>Power BI</div>
+        <div class="float-chip chip-6"><span class="chip-dot"></span>Firebase</div>
+
+        <div class="photo-wrap">
+          <div class="photo-corners">
+            <span class="photo-corner-tr"></span>
+            <span class="photo-corner-bl"></span>
+          </div>
+          <img class="photo-img" src="assets/kabir.jpg" alt="Kabir Patil — Data Science Engineer"/>
+          <div class="photo-badge">
+            <span class="badge-dot2"></span>
+            <span class="badge-text">Available for opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATS ══ -->
+  <div class="stats-strip">
+    <div class="stat rv"><span class="stat-num">4+</span><span class="stat-lbl">Roles &amp; Internships</span></div>
+    <div class="stat rv"><span class="stat-num">5+</span><span class="stat-lbl">Projects Shipped</span></div>
+    <div class="stat rv"><span class="stat-num">4</span><span class="stat-lbl">Certifications</span></div>
+    <div class="stat rv"><span class="stat-num">7.78</span><span class="stat-lbl">CGPA / 10.00</span></div>
+  </div>
+
+  <!-- ══ SKILLS ══ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="s-eyebrow rv">Expertise</div>
+      <h2 class="s-title rv">Technical <em>Proficiency</em></h2>
+      <div class="skills-grid">
+        <div class="skill-bars">
+          <div class="rv"><div class="skill-header"><span class="skill-name">Python</span><span class="skill-pct">90%</span></div><div class="skill-track"><div class="skill-fill" data-w="90"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">SQL &amp; Database Management</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">Power BI &amp; Visualization</span><span class="skill-pct">80%</span></div><div class="skill-track"><div class="skill-fill" data-w="80"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">Pandas / NumPy</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" data-w="88"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">Machine Learning</span><span class="skill-pct">75%</span></div><div class="skill-track"><div class="skill-fill" data-w="75"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">Excel &amp; Data Analysis</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">Flask / Backend Engineering</span><span class="skill-pct">70%</span></div><div class="skill-track"><div class="skill-fill" data-w="70"></div></div></div>
+          <div class="rv"><div class="skill-header"><span class="skill-name">IoT / Firebase / ESP32</span><span class="skill-pct">68%</span></div><div class="skill-track"><div class="skill-fill" data-w="68"></div></div></div>
+        </div>
+        <div class="skills-right">
+          <div class="skill-cat rv"><h4>Core Stack</h4><div class="tag-row"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Excel</span></div></div>
+          <div class="skill-cat rv"><h4>Machine Learning</h4><div class="tag-row"><span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">ResNet-50</span><span class="tag">VGG16</span><span class="tag">CNN</span></div></div>
+          <div class="skill-cat rv"><h4>Engineering</h4><div class="tag-row"><span class="tag">Flask</span><span class="tag">Firebase</span><span class="tag">MongoDB</span><span class="tag">ESP32</span><span class="tag">MySQL</span><span class="tag">Git</span></div></div>
+          <div class="skill-cat rv"><h4>Soft Skills</h4><div class="tag-row"><span class="tag">Critical Thinking</span><span class="tag">Leadership</span><span class="tag">Team Player</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="s-eyebrow rv">Career</div>
+      <h2 class="s-title rv">Work <em>Experience</em></h2>
+      <div class="exp-list">
+
+        <div class="exp-item rv">
+          <div class="exp-left">
+            <div class="exp-period">Jun 2025 — Present</div>
+            <span class="exp-badge badge-ft">Full-time</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Robotics Associate</div>
+            <div class="exp-company">On My Own Technology Pvt. Ltd</div>
+            <ul class="exp-points">
+              <li>Developing inventory management solutions to optimize stock levels and predict demand trends for efficient resource management.</li>
+              <li>Managing and querying SQL databases to store, retrieve, and analyze inventory and forecasting data at production scale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item rv">
+          <div class="exp-left">
+            <div class="exp-period">Jan — May 2025</div>
+            <span class="exp-badge badge-in">Internship</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Data Analyst Intern</div>
+            <div class="exp-company">Primine Software Pvt. Ltd</div>
+            <ul class="exp-points">
+              <li>Engineered inventory optimization models to predict demand trends and reduce operational waste.</li>
+              <li>Streamlined SQL workflows, improving query performance across reporting and analytics pipelines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item rv">
+          <div class="exp-left">
+            <div class="exp-period">Sep — Oct 2023</div>
+            <span class="exp-badge badge-in">Internship</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Data Science Intern</div>
+            <div class="exp-company">Academor</div>
+            <ul class="exp-points">
+              <li>Acquired proficiency in Python, pandas, NumPy, and matplotlib through real-world datasets.</li>
+              <li>Completed data manipulation, analysis, and visualization projects solving applied business problems.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TIMELINE ══ -->
+  <!-- <section class="section section-alt" id="timeline">
+    <div class="container">
+      <div class="s-eyebrow rv">Milestones</div>
+      <h2 class="s-title rv">Career <em>Timeline</em></h2>
+      <div class="timeline">
+        <div class="tl-item rv-l"><div class="tl-dot"></div><div class="tl-date">April 2019</div><div class="tl-title">Secondary School — 85.40%</div><div class="tl-org">Shahu's Garden High School, Nagpur</div><div class="tl-desc">Completed SSC with distinction, building a strong foundation in mathematics and science.</div></div>
+        <div class="tl-item rv-l"><div class="tl-dot"></div><div class="tl-date">April 2021</div><div class="tl-title">Higher Secondary — 83.83%</div><div class="tl-org">Vidarbha Buniyadi Junior College, Nagpur</div><div class="tl-desc">Completed HSC in the science stream, setting the path toward engineering and technology.</div></div>
+        <div class="tl-item rv-l"><div class="tl-dot"></div><div class="tl-date">2021 — Present</div><div class="tl-title">B.Tech CSE (Data Science) — CGPA 7.78</div><div class="tl-org">St. Vincent Pallotti College of Engineering &amp; Technology</div><div class="tl-desc">Specialised degree combining software engineering with data science, ML systems, and analytical pipelines.</div></div>
+        <div class="tl-item rv-l"><div class="tl-dot"></div><div class="tl-date">Sep — Oct 2023</div><div class="tl-title">Data Science Intern — Academor</div><div class="tl-org">First professional industry exposure</div><div class="tl-desc">Built core Python and data analytics skills on live business datasets for the first time professionally.</div></div>
+        <div class="tl-item rv-l"><div class="tl-dot"></div><div class="tl-date">Jan — May 2025</div><div class="tl-title">Data Analyst Intern — Primine Software</div><div class="tl-org">Inventory intelligence and SQL optimisation</div><div class="tl-desc">Built demand-forecasting models and optimised SQL database workflows in a production environment.</div></div>
+        <div class="tl-item rv-l"><div class="tl-dot"></div><div class="tl-date">Jun 2025 — Present</div><div class="tl-title">Robotics Associate — On My Own Technology</div><div class="tl-org">Current full-time role</div><div class="tl-desc">Architecting inventory intelligence systems and managing production-grade SQL analytics pipelines at scale.</div></div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="s-eyebrow rv">Selected Work</div>
+      <h2 class="s-title rv">Featured <em>Projects</em></h2>
+    </div>
+    <div class="proj-grid rv">
+      <div class="proj-card"><div class="proj-num">01</div><div class="proj-icon">🧬</div><div class="proj-title">Medical Image Synthesizer</div><div class="proj-period">Aug — Dec 2024</div><div class="proj-desc">Generated synthetic medical images using ResNet-50 &amp; VGG16 CNNs to address healthcare data scarcity. EDA with augmentation pipelines for class balancing.</div><div class="proj-tags"><span class="proj-tag">Deep Learning</span><span class="proj-tag">CNN</span><span class="proj-tag">ResNet-50</span><span class="proj-tag">VGG16</span></div></div>
+      <div class="proj-card"><div class="proj-num">02</div><div class="proj-icon">🎓</div><div class="proj-title">Student Performance Predictor</div><div class="proj-period">Feb — May 2024</div><div class="proj-desc">Full-stack Flask ML application. Linear Regression model forecasts academic outcomes from daily routine inputs, with secure login and custom EDA pipeline.</div><div class="proj-tags"><span class="proj-tag">Machine Learning</span><span class="proj-tag">Flask</span><span class="proj-tag">Python</span></div></div>
+      <div class="proj-card"><div class="proj-num">03</div><div class="proj-icon">💡</div><div class="proj-title">Smart Pillow — IoT</div><div class="proj-period">Jul — Aug 2025</div><div class="proj-desc">ESP32-powered embedded IoT device with Firebase cloud backend and live analytics dashboard for sleep health pattern detection.</div><div class="proj-tags"><span class="proj-tag">IoT</span><span class="proj-tag">ESP32</span><span class="proj-tag">Firebase</span></div></div>
+      <div class="proj-card"><div class="proj-num">04</div><div class="proj-icon">🪔</div><div class="proj-title">Diwali Sales Analysis</div><div class="proj-period">Sep 2024</div><div class="proj-desc">End-to-end EDA on Diwali retail dataset identifying top-performing sectors, customer segments, and purchase behaviour trends.</div><div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Pandas</span><span class="proj-tag">EDA</span></div></div>
+      <div class="proj-card"><div class="proj-num">05</div><div class="proj-icon">🍕</div><div class="proj-title">Pizza Sales Analysis</div><div class="proj-period">Jan 2025</div><div class="proj-desc">SQL Workbench deep-dive using JOINs, aggregates, and subqueries to identify top SKUs, peak revenue periods, and pricing opportunities.</div><div class="proj-tags"><span class="proj-tag">SQL</span><span class="proj-tag">MySQL</span><span class="proj-tag">Analytics</span></div></div>
+      <div class="proj-card proj-card-cta">
+        <p class="proj-cta-text">More projects on GitHub</p>
+        <a href="https://github.com/Kabirpatil/" target="_blank" rel="noopener" class="btn-outline">View All ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="s-eyebrow rv">Academia</div>
+      <h2 class="s-title rv">Education &amp; <em>Credentials</em></h2>
+      <div class="edu-list">
+        <div class="edu-row rv"><div><div class="edu-degree">B.Tech — CSE (Data Science)</div><div class="edu-school">St. Vincent Pallotti College of Engineering &amp; Technology, Nagpur</div></div><div class="edu-right"><div class="edu-score">7.78</div><div class="edu-year">Pursuing · /10.00</div></div></div>
+        <div class="edu-row rv"><div><div class="edu-degree">Higher Secondary Certificate</div><div class="edu-school">Vidarbha Buniyadi Junior College, Nagpur</div></div><div class="edu-right"><div class="edu-score">83.83%</div><div class="edu-year">April 2021</div></div></div>
+        <div class="edu-row rv"><div><div class="edu-degree">Secondary School Certificate</div><div class="edu-school">Shahu's Garden High School, Nagpur</div></div><div class="edu-right"><div class="edu-score">85.40%</div><div class="edu-year">April 2019</div></div></div>
+      </div>
+      <div class="cert-section">
+        <div class="cert-label">Certifications</div>
+        <div class="cert-grid">
+          <div class="cert-item rv"><div class="cert-name">SQL for Beginners</div><div class="cert-issuer">Scaler</div></div>
+          <div class="cert-item rv"><div class="cert-name">Python for Data Science</div><div class="cert-issuer">NPTEL</div></div>
+          <div class="cert-item rv"><div class="cert-name">MongoDB Certificate</div><div class="cert-issuer">MSIT Services — CMS</div></div>
+          <div class="cert-item rv"><div class="cert-name">Python Certificate</div><div class="cert-issuer">iLearning</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="rv">
+          <div class="contact-eyebrow">Let's Work Together</div>
+          <h2 class="contact-title">Start a<br><em>Conversation</em></h2>
+          <p class="contact-desc">Open to full-time data analyst and engineering roles, internships, and collaborative projects with forward-thinking teams across India and globally.</p>
+          <div class="contact-links">
+            <a href="mailto:kabirpatil0302@gmail.com" class="c-link"><span>kabirpatil0302@gmail.com</span><span class="c-arrow">→</span></a>
+            <a href="https://www.linkedin.com/in/kabir-patil-41b889234/" target="_blank" rel="noopener" class="c-link"><span>LinkedIn Profile</span><span class="c-arrow">→</span></a>
+            <a href="https://github.com/Kabirpatil/" target="_blank" rel="noopener" class="c-link"><span>GitHub Portfolio</span><span class="c-arrow">→</span></a>
+            <a href="tel:+917666195329" class="c-link"><span>+91 76661 95329</span><span class="c-arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM — powered by EmailJS -->
+        <div class="contact-form-wrap rv">
+          <!-- Status messages -->
+          <div id="form-success" class="form-msg form-msg-success" style="display:none">
+            ✅ Message sent! Kabir will get back to you shortly.
+          </div>
+          <div id="form-error" class="form-msg form-msg-error" style="display:none">
+            ❌ Something went wrong. Please email directly at kabirpatil0302@gmail.com
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="from_name">Your Name *</label>
+              <input type="text" id="from_name" name="from_name" placeholder="Jane Smith" required/>
+            </div>
+            <div class="form-group">
+              <label for="from_email">Email Address *</label>
+              <input type="email" id="from_email" name="from_email" placeholder="jane@company.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="organisation">Organisation</label>
+              <input type="text" id="organisation" name="organisation" placeholder="Infosys / TCS / Wipro…"/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210"/>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4" placeholder="We'd love to discuss an opportunity…" required></textarea>
+            </div>
+            <button type="submit" class="btn-solid btn-submit" id="submitBtn">
+              <span id="btn-text">Send Message</span>
+              <span id="btn-loader" style="display:none">Sending…</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>© 2026 Kabir Patil · All Rights Reserved · Nagpur, India</p>
+    <div class="footer-links">
+      <a href="https://github.com/Kabirpatil/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/kabir-patil-41b889234/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:kabirpatil0302@gmail.com">Email</a>
+    </div>
+    <span class="footer-logo">Kabir Patil</span>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>
